@@ -22,8 +22,8 @@ header {
   header a, header a:visited {
     text-decoration: none;
     color: #293238; }
-    header a.active, header a:visited.active {
-      font-weight: bold; }
+  header a.active {
+    font-weight: bold; }
   header .topbar {
     display: flex;
     justify-content: space-between;
