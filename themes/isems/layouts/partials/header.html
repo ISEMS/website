@@ -1,0 +1,19 @@
+<header>
+    <div class="topbar">
+        <a href="/"><h1>ISEMS</h1></a>
+        <nav>
+            <ul>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.header }}
+                <li>
+                    <a href="{{ .URL }}"
+                       class='{{ if $currentPage.IsMenuCurrent "header" . }}active{{ end }}'
+                       title="{{ .Title }}">{{- .Title -}}</a> </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+    <h2 class="claim">
+        ISEMS ermöglicht es dir, einfach ein unabhängiges Solarnetzwerk zu betreiben
+    </h2>
+</header>

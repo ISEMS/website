@@ -1,0 +1,6 @@
+baseURL = "https://thirsty-davinci-0bbe3e.netlify.com/"
+languageCode = "en-us"
+title = "ISEMS"
+theme = "isems"
+
+sectionPagesMenu = "main"

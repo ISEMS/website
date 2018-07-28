@@ -1,0 +1,82 @@
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+$blue: #42596a
+$white: #f5f5f5
+$black: #293238
+
+body
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  padding: 0
+  margin: 0
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  background-color: $white
+
+header
+  background-image: url('/images/sun.jpg')
+  background-size: cover
+  min-height: 300px
+  width: 100%
+  padding: 0 30px
+
+  a, a:visited
+    text-decoration: none
+    color: $black
+
+    &.active
+      font-weight: bold
+
+  .topbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    ul
+      display: flex
+      justify-content: space-around
+      padding-right: 40px
+      li
+        list-style-type: none
+        padding-left: 20px
+
+  .claim
+    margin: 0 auto
+    padding-top: 2em
+    max-width: 40ch
+    color: $black
+    text-shadow: 0 0 30px white
+
+
+footer
+  margin-top: 3em
+  background: $blue
+
+  a, a:visited
+    color: white
+    text-decoration: none
+
+  ul
+    display: flex
+    max-width: 500px
+    justify-content: space-between
+    padding-left: 10px
+    li
+      list-style-type: none
+
+
+#content
+  margin: 0 auto
+  max-width: 60ch
+  padding: 10px
+  flex-grow: 1
+  line-height: 1.3em
+
+  img
+    max-width: 80%
+    max-height: 500px
+    margin: 0 auto
+    box-shadow: 0 0 4px 0 black

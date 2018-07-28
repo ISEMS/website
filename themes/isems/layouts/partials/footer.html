@@ -1,0 +1,12 @@
+<footer>
+    <nav>
+        <ul>
+            {{ range .Site.Menus.footer }}
+            <li> <a href="{{ .URL }}" title="{{ .Title }}">{{- .Title -}}</a> </li>
+            {{ end }}
+            <!--<li><a href="/documentation/">Technische Doku</a></li>-->
+            <!--<li><a href="/impressum/">Impresssum &amp; Datenschutz</a></li>-->
+            <li><a href="https://github.com/isems/">Github</a></li>
+        </ul>
+    </nav>
+</footer>
