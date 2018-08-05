@@ -28,3 +28,4 @@ Des weitern gibt es eine Karten-Ansicht und detaillierte Graphen, die einen tief
 Einblick in die einzelnen Module ermöglichen.
 
 
+Eine Live-Version der Software kann [hier](https://app.isems.de) ausprobiert werden.
