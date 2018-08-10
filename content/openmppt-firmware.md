@@ -36,12 +36,12 @@ Der Freifunk-OpenMPPT ist ein programmierbarer Open-Source und Open-Hardware Sol
 ## Kommunikation mit dem Freifunk-OpenMPPT
 
 
-###Allgemein
+### Allgemein
 
 Der Freifunk-OpenMPPT-Solarcontroller verfügt über eine **RS232**-Schnittstelle mit 3.3 Volt Logikpegel (ausschließlich 3.3 V, für Standard-RS232-Pegel oder 5 Volt TTL-Pegel ist ein Pegelwandler notwendig, da der Mikrocontroller des OpenMPPT sonst beschädigt werden kann). Die Kommunikationsparameter für die serielle Schnittstelle:** 9600 Baud, 8N1**, keine Hardware- oder Software-Flusskontrolle.
 
 
-##Empfangen der Daten vom Freifunk-OpenMPPT
+## Empfangen der Daten vom Freifunk-OpenMPPT
 
 Der Freifunk-OpenMPPT Solarkontroller sendet mindestens einmal pro Minute einen Datensatz über seinen Betriebszustand über die serielle Schnittstelle an den angeschlossenen Router. Ist die ISEMS-Software auf dem Router installiert, werden die Daten nach **/tmp/mmpt.log** geschrieben und von der ISEMS-Firmware ausgewertet und aufbereitet.
 
@@ -70,7 +70,7 @@ Bei einem energieautarken Netzwerkknoten an einem einsamen, schwer zugänglichen
 
 Der Schönheitfehler: Das System startet regelmäßig neu und setzt z.B. einmal pro Tag um 4 Uhr Nachts für eine halbe Minute aus, auch wenn es nicht erforderlich wäre.
 
-####Powerdown-Timer (P)
+#### Powerdown-Timer (P)
 
 Der Powerdown-Timer ist das Gegenstück zum Router-Reset-Timer: Er schaltet die am Lastausgang angeschlossenen Verbraucher - in unserem Fall natürlich den oder die Router – nach Ablauf des Timers wieder ein. Das spart Energie, z.B. Nachts, im Winter, wenn Energie knapp ist.
 
@@ -94,11 +94,11 @@ Die Lebensdauer eines Akkus ist von der Betriebsdauer und der Anzahl und die Tie
 
 Beispiel:
 
-**echo "N=12600" > /dev/ttyXXX **
+**echo "N=12600" > /dev/ttyXXX**
 
 schaltet den Lastausgang bei Überschreiten von 12,6 Volt ein.
 
-**echo "F=12000" > /dev/ttyXXX ** 
+**echo "F=12000" > /dev/ttyXXX** 
 
 schaltet die Verbraucher bei Unterschreiten von 12,0 Volt aus.
 
