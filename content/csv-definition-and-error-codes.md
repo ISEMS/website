@@ -1,6 +1,7 @@
 ---
 title: Logfile csv and error codes
 url: /documentation/codes
+draft: false
 ---
 
 #ISEMS CSV file format and hex error codes#
