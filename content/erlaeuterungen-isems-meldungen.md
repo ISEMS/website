@@ -32,21 +32,21 @@ Der Akku ist vollständig aufgeladen. Das System läuft mit Solarenergie. Es ist
 
 Diese Meldung sollte nur im Winter an manchen Tagen erscheinen. Tritt sie häufig oder gar im Sommer auf, kann das mehrere Ursachen haben:
 
-* Der Akku ist zu klein dimensioniert oder seine Speicherkapazität hat durch Verschleiß abgenommen. ** Abhilfe: Die Akkukapazität durch Parallelschaltung von Akkus vergrößern oder größeren Akku installieren, bzw. verschlissenen Akku ersetzen.**
+* Der Akku ist zu klein dimensioniert oder seine Speicherkapazität hat durch Verschleiß abgenommen. **Abhilfe: Die Akkukapazität durch Parallelschaltung von Akkus vergrößern oder größeren Akku installieren, bzw. verschlissenen Akku ersetzen.**
 
-* Das Solarmodul ist zu klein dimensoniert, es wird grundsätzlich mehr Energie verbraucht als produziert. ** Abhilfe: Ein zusätzliches Solarmodul oder ein größeres Solarmodul installieren. Dabei die maximale Belastbarkeit des Open-MPPT-Reglers beachten und eventuell durch leistungsstärkere Version ersetzen. Stromsparmechanismen aktivieren oder sparsameren Router verwenden.
-**
+* Das Solarmodul ist zu klein dimensoniert, es wird grundsätzlich mehr Energie verbraucht als produziert. **Abhilfe: Ein zusätzliches Solarmodul oder ein größeres Solarmodul installieren. Dabei die maximale Belastbarkeit des Open-MPPT-Reglers beachten und eventuell durch leistungsstärkere Version ersetzen. Stromsparmechanismen aktivieren oder sparsameren Router verwenden.**
+
 * Das Solarmodul wird im Laufe des Tages abgeschattet (z.B. durch Äste von Bäumen.)  Das Solarmodul sollte sich von Sonnenaufgang bis Sonnenuntergang nicht im Schatten befinden. ** Abhilfe: Einen besseren Montageort suchen oder die Objekte entfernen, die zur Verschattung des Solarmoduls führen.**
 
 * Das Solarmodul ist falsch ausgerichtet. **Abhilfe:** Es sollte um die Mittagszeit frontal zur Sonne zeigen.
 
 * Das Solarmodul ist verschmutzt (z.B. durch Laub, Vogelkot), vereist oder mit Schnee bedeckt. ** Abhilfe: Das Solarmodul sollte relativ steil (45-55 Grad) montiert werden, so dass Verschmutzungen leicht vom Regen abgewaschen werden oder Schnee leicht herunter rutscht.** Die daraus resultierende Leistungseinbuße im Sommer ist leicht zu verschmerzen und im Winter passt der Winkel ausgezeichnet. So reinigt sich das Solarmodul in der Regel von selbst, ohne manuell einzugreifen. Die Unterkante des Solarmoduls sollte ausreichend Abstand zum Dach oder Boden haben, so dass sich anfallender Schnee in den Wintermonaten nicht vor dem Solarmodul auftürmt.
 
-* **Wird tagsüber nicht geladen?** Dann ist kein Solarmodul angeschlossen oder der Anschluss ist unterbrochen. ** Abhilfe: Solarmodul anschließen, Verbindungen prüfen.**
+* **Wird tagsüber nicht geladen?** Dann ist kein Solarmodul angeschlossen oder der Anschluss ist unterbrochen. **Abhilfe: Solarmodul anschließen, Verbindungen prüfen.**
 
 #### »Warning: Temperature sensor not connected«
 
-** Bedeutung: Es ist kein Temperatursensor angeschlossen, oder die Verbindung zum Temperatursensor ist unterbrochen.**
+**Bedeutung: Es ist kein Temperatursensor angeschlossen, oder die Verbindung zum Temperatursensor ist unterbrochen.**
 
 Der Temperatursensor ist erforderlich, damit der Open-MPPT die Temperatur des Akkus messen und die maximale Ladespannung berechnen kann. Ohne Temperatursensor geht der Open-MPPT permanent von 20 Grad Akkutemperatur aus. Ist der Akku Temperaturen über 30 Grad und unter 10 Grad ausgesetzt, beschleunigt ein fehlender Temperatursensor den Akku-Verschleiß.
 
@@ -66,7 +66,7 @@ Das ist nicht weiter schlimm, allerdings reduziert sich vorübergehend die nutzb
 
 #### »Warning: Energy storage capacity too small. Check battery size and/or wear«
 
-**Bedeutung: Das Verhältnis zwischen Solarleistung und Akkukapazität ist ungünstig. **
+**Bedeutung: Das Verhältnis zwischen Solarleistung und Akkukapazität ist ungünstig.**
 
 Die Kapazität des Akkus und die maximale Leistung des Solarmoduls sollten in einem sinnvollen Verhältnis stehen. Allzu schnelles Laden und allzu schnelles Entladen beschleunigt prinzipiell den Akkuverschleiß. Wird ein Solarakku mit unverhältnismäßig großen Ladestrom – größer als 1/5 seiner Nennkapazität – geladen, verkürzt sich die Lebensdauer.
  
