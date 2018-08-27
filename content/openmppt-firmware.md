@@ -1,7 +1,9 @@
 ---
 title: OpenMPPT Firmware
 url: /firmware
+menu: footer
 ---
+
 # Der Freifunk-OpenMPPT
 
 Der Freifunk-OpenMPPT ist ein programmierbarer Open-Source und Open-Hardware Solarladeregler mit sogenanntem Maximum-Power-Point-Tracking.  MPP-Tracking bedeutet, dass der Solarregler die Spannung des Solarmoduls im Punkt größter Ausgangsleistung berechnet und elektronisch nachführt, so dass der größtmögliche Energieertrag entsteht. Dadurch läßt sich der Ladestrom – je nach Batterieladestand und Temperatur – gegenüber einem einfachen PWM-Laderegler um bis zu 40% steigern. Der Freifunk-OpenMPPT besitzt eine serielle Schnittstelle, über die er seine  Betriebsdaten ausgibt und über die er auch gesteuert und seine Firmware neu geflasht werden kann. 

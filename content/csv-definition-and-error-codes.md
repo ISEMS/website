@@ -1,3 +1,9 @@
+---
+title: Logfile csv and error codes
+url: /codes
+menu: footer
+---
+
 #ISEMS CSV file format and hex error codes#
 
 
