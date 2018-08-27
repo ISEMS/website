@@ -1,6 +1,6 @@
 ---
 title: ISEMS Systemmeldungen
-url: /tec-doc
+url: /documentation/tec-doc
 menu: footer
 ---
 
@@ -28,19 +28,19 @@ Der Akku ist vollständig aufgeladen. Das System läuft mit Solarenergie. Es ist
 
 #### »Warning: Battery level low. Increased battery wear«
 
-** Bedeutung: Der Ladestand des Akkus hat 50% Ladestand unterschritten. Bei tiefem Ladestand sinkt die Lebensdauer des Akkus, die von Betriebsdauer und Entladetiefe abhängt.**
+**Bedeutung: Der Ladestand des Akkus hat 50% Ladestand unterschritten. Bei tiefem Ladestand sinkt die Lebensdauer des Akkus, die von Betriebsdauer und Entladetiefe abhängt.**
 
 Diese Meldung sollte nur im Winter an manchen Tagen erscheinen. Tritt sie häufig oder gar im Sommer auf, kann das mehrere Ursachen haben:
 
-* Der Akku ist zu klein dimensioniert oder seine Speicherkapazität hat durch Verschleiß abgenommen. **Abhilfe: Die Akkukapazität durch Parallelschaltung von Akkus vergrößern oder größeren Akku installieren, bzw. verschlissenen Akku ersetzen.**
+* Der Akku ist zu klein dimensioniert oder seine Speicherkapazität hat durch Verschleiß abgenommen. **Abhilfe:** Die Akkukapazität durch Parallelschaltung von Akkus vergrößern oder größeren Akku installieren, bzw. verschlissenen Akku ersetzen.
 
-* Das Solarmodul ist zu klein dimensoniert, es wird grundsätzlich mehr Energie verbraucht als produziert. **Abhilfe: Ein zusätzliches Solarmodul oder ein größeres Solarmodul installieren. Dabei die maximale Belastbarkeit des Open-MPPT-Reglers beachten und eventuell durch leistungsstärkere Version ersetzen. Stromsparmechanismen aktivieren oder sparsameren Router verwenden.**
+* Das Solarmodul ist zu klein dimensoniert, es wird grundsätzlich mehr Energie verbraucht als produziert. **Abhilfe:** Ein zusätzliches Solarmodul oder ein größeres Solarmodul installieren. Dabei die maximale Belastbarkeit des Open-MPPT-Reglers beachten und eventuell durch leistungsstärkere Version ersetzen. Stromsparmechanismen aktivieren oder sparsameren Router verwenden.
 
-* Das Solarmodul wird im Laufe des Tages abgeschattet (z.B. durch Äste von Bäumen.)  Das Solarmodul sollte sich von Sonnenaufgang bis Sonnenuntergang nicht im Schatten befinden. ** Abhilfe: Einen besseren Montageort suchen oder die Objekte entfernen, die zur Verschattung des Solarmoduls führen.**
+* Das Solarmodul wird im Laufe des Tages abgeschattet (z.B. durch Äste von Bäumen.)  Das Solarmodul sollte sich von Sonnenaufgang bis Sonnenuntergang nicht im Schatten befinden. **Abhilfe:** Einen besseren Montageort suchen oder die Objekte entfernen, die zur Verschattung des Solarmoduls führen.
 
 * Das Solarmodul ist falsch ausgerichtet. **Abhilfe:** Es sollte um die Mittagszeit frontal zur Sonne zeigen.
 
-* Das Solarmodul ist verschmutzt (z.B. durch Laub, Vogelkot), vereist oder mit Schnee bedeckt. ** Abhilfe: Das Solarmodul sollte relativ steil (45-55 Grad) montiert werden, so dass Verschmutzungen leicht vom Regen abgewaschen werden oder Schnee leicht herunter rutscht.** Die daraus resultierende Leistungseinbuße im Sommer ist leicht zu verschmerzen und im Winter passt der Winkel ausgezeichnet. So reinigt sich das Solarmodul in der Regel von selbst, ohne manuell einzugreifen. Die Unterkante des Solarmoduls sollte ausreichend Abstand zum Dach oder Boden haben, so dass sich anfallender Schnee in den Wintermonaten nicht vor dem Solarmodul auftürmt.
+* Das Solarmodul ist verschmutzt (z.B. durch Laub, Vogelkot), vereist oder mit Schnee bedeckt. **Abhilfe: Das Solarmodul sollte relativ steil (45-55 Grad) montiert werden, so dass Verschmutzungen leicht vom Regen abgewaschen werden oder Schnee leicht herunter rutscht.** Die daraus resultierende Leistungseinbuße im Sommer ist leicht zu verschmerzen und im Winter passt der Winkel ausgezeichnet. So reinigt sich das Solarmodul in der Regel von selbst, ohne manuell einzugreifen. Die Unterkante des Solarmoduls sollte ausreichend Abstand zum Dach oder Boden haben, so dass sich anfallender Schnee in den Wintermonaten nicht vor dem Solarmodul auftürmt.
 
 * **Wird tagsüber nicht geladen?** Dann ist kein Solarmodul angeschlossen oder der Anschluss ist unterbrochen. **Abhilfe: Solarmodul anschließen, Verbindungen prüfen.**
 
@@ -100,7 +100,7 @@ Folgendes muss in der Datei /etc/inittab stehen:
 
 		#::askconsole:/usr/libexec/login.sh
 
-Durch das vorangestellte Hashzeichen ** #**  wird die üblicherweise aktivierte serielle Login-Konsole deaktiviert. Danach Router neu starten oder ***init q*** auf der Kommandozeile ausführen, um die Datei neu einzulesen.
+Durch das vorangestellte Hashzeichen **#**  wird die üblicherweise aktivierte serielle Login-Konsole deaktiviert. Danach Router neu starten oder ***init q*** auf der Kommandozeile ausführen, um die Datei neu einzulesen.
 
 * Die serielle Schnittstelle des Routers funktioniert generell nicht. 
 
