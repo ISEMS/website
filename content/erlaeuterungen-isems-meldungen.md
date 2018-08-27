@@ -1,10 +1,10 @@
 ---
 title: ISEMS Systemmeldungen
 url: /documentation/system-messages
-draft:false
+draft: false
 ---
 
-# Erläuterung der ISEMS Systemmeldungen
+# Erläuterung der Statusmeldungen
 
 # Normale Statusmeldungen
 
@@ -96,13 +96,13 @@ Hier ein Beispiel:
 
 ## »No information. Error: No communication with solar controller«
 
-**Bedeutung: Keine Kommunikation zwischen Open-MPPT und Router. ISEMS fliegt im Blindflug.**
+**Bedeutung: Keine Kommunikation zwischen Open-MPPT und Router. Das System fliegt im Blindflug.**
 
-Auf keinen Fall ein Firmwareupdate des Routers aus der Ferne machen, da unbekannt ist, wann der Tiefentladeschutz oder der Watchdog die Stromzufuhr des Routers unterbricht. Dies würde den Router in einen Briefbeschwerer verwandeln, der nur durch fortgeschrittenes technisches Handauflegen repariert werden kann.
+Achtung: In diesem Systemzustand auf keinen Fall ein Firmwareupdate des Routers aus der Ferne machen, da unbekannt ist, wann der Tiefentladeschutz oder der Watchdog-Reset-Timer die Stromzufuhr des Routers unterbricht. Dies würde den Router in einen Briefbeschwerer verwandeln, der nur durch fortgeschrittenes Handauflegen repariert werden kann ;)
 
-**Abhilfe:** Tritt der Fehler im laufenden Betrieb auf, ist vermutlich das Kabel der seriellen Verbindung zwischen Router und Open-MPPT unterbrochen oder die Steckverbindung abgezogen. 
+**Abhilfe:** Tritt diese Fehlermeldung im laufenden Betrieb auf, ist vermutlich das Kabel der seriellen Verbindung zwischen Router und Open-MPPT unterbrochen oder die Steckverbindung abgezogen. 
 
-###Tritt das Problem bei der ersten Installation auf, kommen mehrere Fehlermöglichkeiten in Frage:
+### Tritt das Problem bei der ersten Installation auf, kommen mehrere Fehlermöglichkeiten in Frage:
 
 * Die eingestellte Baudrate oder andere Einstellungen der seriellen Schnittstelle stimmen nicht. Es sind* 9600 Baud, 8N1*, keine Hardware-Flowcontrol.
 
