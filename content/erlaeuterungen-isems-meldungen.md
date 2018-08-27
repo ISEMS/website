@@ -98,7 +98,9 @@ Hier ein Beispiel:
 
 **Bedeutung: Keine Kommunikation zwischen Open-MPPT und Router. Das System fliegt im Blindflug.**
 
-Achtung: In diesem Systemzustand auf keinen Fall ein Firmwareupdate des Routers aus der Ferne machen, da unbekannt ist, wann der Tiefentladeschutz oder der Watchdog-Reset-Timer die Stromzufuhr des Routers unterbricht. Dies würde den Router in einen Briefbeschwerer verwandeln, der nur durch fortgeschrittenes Handauflegen repariert werden kann ;)
+Achtung:  Erscheint diese Meldung, dann auf keinen Fall ein Firmwareupdate des Routers aus der Ferne durchführen, da unbekannt ist, ob während des Updates die Stromzufuhr des Routers unterbrochen wird. Dies würde den Router in einen High-Tech-Briefbeschwerer verwandeln, der nur durch fortgeschrittenes Handauflegen repariert werden kann ;)
+
+Die Unterbrechung könnte durch den Tiefentladeschutz oder den Watchdog-Reset-Timer verursacht werden.
 
 **Abhilfe:** Tritt diese Fehlermeldung im laufenden Betrieb auf, ist vermutlich das Kabel der seriellen Verbindung zwischen Router und Open-MPPT unterbrochen oder die Steckverbindung abgezogen. 
 
@@ -106,17 +108,17 @@ Achtung: In diesem Systemzustand auf keinen Fall ein Firmwareupdate des Routers 
 
 * Die eingestellte Baudrate oder andere Einstellungen der seriellen Schnittstelle stimmen nicht. Es sind* 9600 Baud, 8N1*, keine Hardware-Flowcontrol.
 
-* TX/RX-Leitungen der seriellen Schnittstelle vertauscht oder keine Masseverbindung zwischen Router und Open-MPPT.
+* Die TX/RX-Leitungen der seriellen Schnittstelle sind vertauscht oder es besteht keine Masseverbindung zwischen Router und Open-MPPT.
 
 * Kein kompatibler 3,3 Volt-Pegel der seriellen Schnittstelle. Abhilfe: Pegelwandler benutzen.
 
-* Die serielle Schnittstelle des Routers ist belegt durch ein serielles Terminal-Login.
+* Die serielle Schnittstelle des Routers wird durch ein serielles Terminal-Login-Programm blockiert. Serielle Terminals sind per Default in den meisten Routerfirmwares aktiv und müssen vor der Verwendung der seriellen Schnittstelle für andere Zwecke deaktiviert werden.
 
-Folgendes muss in der Datei /etc/inittab stehen:
+Dazu muss in der Datei /etc/inittab diese Zeile wie folgt aussehen:
 
 		#::askconsole:/usr/libexec/login.sh
 
-Durch das vorangestellte Hashzeichen **#**  wird die üblicherweise aktivierte serielle Login-Konsole deaktiviert. Danach Router neu starten oder ***init q*** auf der Kommandozeile ausführen, um die Datei neu einzulesen.
+Durch das vorangestellte Hashzeichen **#**  wird der Start der seriellen Login-Konsole abgeschaltet. Nach der Änderung der Datei, den Router neu starten oder ***init q*** auf der Kommandozeile ausführen, um die Datei neu einzulesen.
 
 * Die serielle Schnittstelle des Routers funktioniert generell nicht. 
 
@@ -124,4 +126,4 @@ Häufig erfordern preiswerte Router neben dem Bestücken von Pins einfache Modif
 
 * Masseschleife in der Stromversorgung. 
 
-Sind die Kabel zwischen Router und OpenMPPT, die das negative Spannungspotential (Minus, Masse, 0 Volt) führen, zu lang oder zu dünn, schwebt der Nullpunkt abhängig vom Stromfluss (Ampere). Der Effekt: Es kommt zu Kommunikationsfehlern, oder die Kommunikation funktioniert nur in eine Richtung. Abhilfe: Bessere und/oder kürzere Masseverbindung.
+Sind die Kabel zwischen Router und OpenMPPT, die das negative Spannungspotential (Minus, Masse, 0 Volt) führen, zu lang und zu dünn, schwebt der Nullpunkt abhängig vom Stromfluss (Ampere). Der Effekt: Es kommt zu Kommunikationsfehlern, oder die Kommunikation funktioniert nur in eine Richtung. Abhilfe: Bessere und/oder kürzere Masseverbindung.
