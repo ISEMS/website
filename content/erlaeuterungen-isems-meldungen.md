@@ -67,13 +67,29 @@ Das ist nicht weiter schlimm, allerdings reduziert sich vorübergehend die nutzb
 
 **Bedeutung: Das Verhältnis zwischen Solarleistung und Akkukapazität ist ungünstig.**
 
-Die Kapazität des Akkus und die maximale Leistung des Solarmoduls sollten in einem sinnvollen Verhältnis stehen. Allzu schnelles Laden und allzu schnelles Entladen beschleunigt prinzipiell den Akkuverschleiß. Wird ein Solarakku mit unverhältnismäßig großen Ladestrom – größer als 1/5 seiner Nennkapazität – geladen, verkürzt sich die Lebensdauer.
- 
-Im konkreten Fall schätzt die ISEMS-Software die Akkukapazität im Verhältnis zu angegebenen Solarmodulleistung als zu klein ein. Ein Rechenbeispiel: Dieser Effekt tritt auch am Ende der Lebensdauer des Akkus auf, wenn die effektive Kapazität des Akkus durch Verschleiß immer kleiner wird. Die auf dem Gehäuse aufgedruckte Angabe der Kapazität weicht immer stärker von der tatsächlichen Kapazität ab. Das ISEMS-System versucht, die verbleibende Speicherkapazität des Akkus abzuschätzen.
+Die Kapazität des Akkus und die maximale Leistung des Solarmoduls sollten in einem sinnvollen Verhältnis stehen. Allzu schnelles Laden und allzu schnelles Entladen beschleunigt den Akkuverschleiß bei jeder Art von Akku. Wird ein Solarakku mit unverhältnismäßig großem Ladestrom – größer als 1/5 seiner Nennkapazität – geladen, verkürzt sich die Lebensdauer.
+
+Erscheint diese Meldung, schätzt die ISEMS-Software die Akkukapazität im Verhältnis zu angegebenen Solarmodulleistung als zu klein ein. Dieser Effekt tritt auch am Ende der Lebensdauer des Akkus auf, wenn die tatsächliche Kapazität des Akkus durch Verschleiß immer kleiner wird. Die auf dem Gehäuse aufgedruckte Angabe der Kapazität weicht immer stärker von der tatsächlichen Kapazität ab. Das ISEMS-System versucht, die verbleibende Speicherkapazität des Akkus abzuschätzen.
 
 **Abhilfe:** Erscheint diese Meldung häufig und fällt das System bereits im Frühjahr und Herbst häufig aus, deutet das auf einen verschlissenen Akku hin.
 
-**Bitte beachten: Diese Funktion beruht auf Abschätzung des Ladezustands und des Akkuzustands und ist davon abhängig, dass in /etc/config/ffopenmppt korrekte Angaben bezüglich Stromverbrauch, Akkukapazität im Neuzustand und Solarmodulleistung angegeben sind.**
+**Bitte beachten:** Diese Funktion beruht auf Abschätzung des Ladezustands und des Akkuzustands und ist davon abhängig, dass auf der Seite des Routers die Konfigurationsdatei
+
+		/etc/config/ffopenmppt
+
+vorhanden ist, und dass dort korrekte Angaben bezüglich Stromverbrauch, Akkukapazität im Neuzustand und Solarmodulleistung angegeben sind.
+
+Hier ein Beispiel:
+
+		config ffopenmppt
+		        option powersave '0'
+		        # Rated solar module power in Watt
+		        option solar_module_capacity '20'
+		        # Average power consumption of router in Ampere (measured)
+ 		        option average_power_consumption '0.1'
+ 		        # Rated battery capacity in Amperehours
+        		option rated_batt_capacity '7'
+
 
 ## Fehlermeldungen
 
@@ -85,9 +101,9 @@ Auf keinen Fall ein Firmwareupdate des Routers aus der Ferne machen, da unbekann
 
 **Abhilfe:** Tritt der Fehler im laufenden Betrieb auf, ist vermutlich das Kabel der seriellen Verbindung zwischen Router und Open-MPPT unterbrochen oder die Steckverbindung abgezogen. 
 
-**Tritt das Problem bei der ersten Installation auf, kommen eine lange Reihe von Fehlermöglichkeiten in Frage:**
+###Tritt das Problem bei der ersten Installation auf, kommen mehrere Fehlermöglichkeiten in Frage:
 
-* Die eingestellte Baudrate oder andere Einstellungen der seriellen Schnittstelle stimmen nicht. Es ist 9600 Baud, 8N1.
+* Die eingestellte Baudrate oder andere Einstellungen der seriellen Schnittstelle stimmen nicht. Es sind* 9600 Baud, 8N1*, keine Hardware-Flowcontrol.
 
 * TX/RX-Leitungen der seriellen Schnittstelle vertauscht oder keine Masseverbindung zwischen Router und Open-MPPT.
 
