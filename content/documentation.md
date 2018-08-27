@@ -1,8 +1,10 @@
 ---
 title: Technische Dokumentation
 url: /documentation/
+draft: false
 menu: footer
 ---
+
 # Technische Dokumentation
 
 ## [ISEMS Systemmeldungen erklärt](http:/isems.de/documentation/system-messages)

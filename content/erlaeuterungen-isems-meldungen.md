@@ -6,27 +6,27 @@ draft:false
 
 # Erläuterung der ISEMS Systemmeldungen
 
-## Normale Statusmeldungen
+# Normale Statusmeldungen
 
-**»Healthy«**
+### »Healthy«
 
 Das ISEMS-System funktioniert einwandfrei. So sollte es immer sein :) 
 
-**»Charging«**
+### »Charging«
 
 Der Akku wird geladen. Das System läuft mit Solarenergie und speichert die Solarenergie im Akku, die gerade nicht verbraucht wird.
 
-**»Discharging«**
+### »Discharging«
 
 Der Akku wird nachts oder bei sehr geringer Sonneneinstrahlung entladen. Das System verbraucht jetzt im Akku gespeicherte Solarenergie. Diese Meldung sollte bei Tag nicht erscheinen, ausgenommen in der Dämmerung oder bei sehr trüben Lichtverhältnissen. Findet während des Tages keine Ladung statt, deutet das auf ein sich ankündigendes Problem hin.
 
-**»Fully charged«**
+### »Fully charged«
 
 Der Akku ist vollständig aufgeladen. Das System läuft mit Solarenergie. Es ist Energieüberschuss vorhanden, der nicht gespeichert oder verbraucht wird. 
 
-## Warnungen
+# Warnungen
 
-#### »Warning: Battery level low. Increased battery wear«
+## »Warning: Battery level low. Increased battery wear«
 
 **Bedeutung: Der Ladestand des Akkus hat 50% Ladestand unterschritten. Bei tiefem Ladestand sinkt die Lebensdauer des Akkus, die von Betriebsdauer und Entladetiefe abhängt.**
 
@@ -44,7 +44,7 @@ Diese Meldung sollte nur im Winter an manchen Tagen erscheinen. Tritt sie häufi
 
 * **Wird tagsüber nicht geladen?** Dann ist kein Solarmodul angeschlossen oder der Anschluss ist unterbrochen. **Abhilfe: Solarmodul anschließen, Verbindungen prüfen.**
 
-#### »Warning: Temperature sensor not connected«
+## »Warning: Temperature sensor not connected«
 
 **Bedeutung: Es ist kein Temperatursensor angeschlossen, oder die Verbindung zum Temperatursensor ist unterbrochen.**
 
@@ -52,19 +52,19 @@ Der Temperatursensor ist erforderlich, damit der Open-MPPT die Temperatur des Ak
 
 **Abhilfe: Temperatursensor anschließen, Kabel und Steckverbindungen prüfen.**
 
-#### »Battery overheating«
+## »Battery overheating«
 
 **Bedeutung: Die Temperatur des Akkus ist zu heiß, sie überschreitet 42 Grad Celsius.**
 
 Oberhalb von 42 Grad stellt der Open-MPPT das Laden zum Schutz des Akkus ein. Wenn die Umgebungstemperatur über 40 Grad liegt, lässt sich dieser Zustand kaum vermeiden. **Abhilfe: Der Akku sollte generell im Schatten und nicht in der Sonne stehen**.
 
-#### »Low battery temperature«
+## »Low battery temperature«
 
 **Bedeutung: Die Temperatur des Akkus ist sehr niedrig, sie unterschreitet -10 Grad Celsius.**
 
 Das ist nicht weiter schlimm, allerdings reduziert sich vorübergehend die nutzbare Kapazität des Akkus. Werden Akkus mit flüssigem Elektrolyten verwendet, sollte berücksichtigt werden, dass diese bei sehr niedrigem Ladestand einfrieren können. 
 
-#### »Warning: Energy storage capacity too small. Check battery size and/or wear«
+## »Warning: Energy storage capacity too small. Check battery size and/or wear«
 
 **Bedeutung: Das Verhältnis zwischen Solarleistung und Akkukapazität ist ungünstig.**
 
@@ -92,9 +92,9 @@ Hier ein Beispiel:
         		option rated_batt_capacity '7'
 
 
-## Fehlermeldungen
+# Fehlermeldungen
 
-#### »No information. Error: No communication with solar controller«
+## »No information. Error: No communication with solar controller«
 
 **Bedeutung: Keine Kommunikation zwischen Open-MPPT und Router. ISEMS fliegt im Blindflug.**
 
