@@ -1,7 +1,6 @@
 ---
 title: ISEMS Systemmeldungen
-url: /documentation/tec-doc
-menu: footer
+url: /documentation/system-messages
 ---
 
 # Erläuterung der ISEMS Systemmeldungen
