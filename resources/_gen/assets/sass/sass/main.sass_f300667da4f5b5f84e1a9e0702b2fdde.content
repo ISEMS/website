@@ -13,6 +13,9 @@ body {
   min-height: 100vh;
   background-color: #f5f5f5; }
 
+h1, h2 {
+  line-height: 1.2em; }
+
 header {
   background-image: url("/images/sun.jpg");
   background-size: cover;

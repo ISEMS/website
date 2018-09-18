@@ -1,7 +1,7 @@
 ---
 title: OpenMPPT Firmware
 url: /documentation/firmware
-draft:false
+draft: false
 ---
 
 

@@ -4,12 +4,12 @@ url: /documentation/codes
 draft: false
 ---
 
-#ISEMS CSV file format and hex error codes#
+# ISEMS CSV file format and hex error codes
 
 
-The ISEMS CSV communication and storage data output** revision 1 **uses the following format:
+The ISEMS CSV communication and storage data output **revision 1** uses the following format:
 
-#Data fields
+## Data fields
 
 ~~~
 01 Node-ID = nodeid ;
@@ -33,13 +33,13 @@ The ISEMS CSV communication and storage data output** revision 1 **uses the foll
 19 Status code (hex value) = statuscode
 ~~~
 
-#CSV packet content summary:
+## CSV packet content summary:
 ~~~   
 01 packetrev; 02 packetrev; 03 timestamp; 04 firmware_type; 05 nextreboot; 06 powersave; 07 V_oc; 08 V_in; 09 V_out; 10 charge_state_int; 11 health_estimate; 12 battery_temperature; 13 low_voltage_disconnect; 14 temp_corr_V_end; 15 rated_batt_capacity;  16 solar_module_capacity; 17 lat; 18 long; 19 statuscode
 ~~~
 
 
-#ISEMS bit error hex codes
+## ISEMS bit error hex codes
  
 
 ~~~c

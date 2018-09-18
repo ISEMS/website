@@ -7,8 +7,8 @@ menu: footer
 
 # Technische Dokumentation
 
-## [ISEMS Systemmeldungen erklärt](http:/isems.de/documentation/system-messages)
+## [ISEMS Systemmeldungen erklärt](/documentation/system-messages)
 
-## [Funktionen und Anwendung der Open-MPPT-Firmware](http:/isems.de/documentation/firmware)
+## [Funktionen und Anwendung der Open-MPPT-Firmware](/documentation/firmware)
 
-## [Format der CSV-Logdateien und Definition der Hex-Error-Codes](http:/isems.de/documentation/codes)
+## [Format der CSV-Logdateien und Definition der Hex-Error-Codes](/documentation/codes)
