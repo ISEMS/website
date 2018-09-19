@@ -86,8 +86,8 @@ Hier ein Beispiel:
 		        option powersave '0'
 		        # Rated solar module power in Watt
 		        option solar_module_capacity '20'
-		        # Average power consumption of router in Ampere (measured)
- 		        option average_power_consumption '0.1'
+		        # Maximum power consumption of router in Ampere
+		        option maximum_power_consumption '0.1'
  		        # Rated battery capacity in Amperehours
         		option rated_batt_capacity '7'
 
