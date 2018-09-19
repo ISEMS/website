@@ -8,7 +8,7 @@ Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen v
 
 ![Mobiler Solarknoten auf dem Tempelhofer Feld](/images/freifunk-mast-thf-klein.jpg)
 
-Das Konzept baut auf dem Freifunk-OpenMPPT-Solarcontroller auf und ist dazu vorgesehen, unabhängige Netzknoten an schwer zu erschließenden Standorten mit Solarenergie zu betreiben und zu managen. 
+Das Konzept baut auf dem Freifunk-OpenMPPT-Solarcontroller auf und ist dazu vorgesehen, unabhängige Netzknoten an schwer zu erschließenden Standorten mit Solarenergie zu betreiben und zu managen.
 
 ![Hardware](/images/Blockschaltbild-Foto-klein.png)
 
@@ -17,7 +17,7 @@ Das ISEMS-System besteht aus einer Web-App, die eine Übersicht über die Betrie
 ![Physikalischer Layer und Softwarelayer](/images/Hardware-Software-Graphs.jpg)
 
 
-Die Statusinformationen der einzelnen Solarknotens können von den Usern auch lokal und dezentral über einen Web-Browser eingesehen werden, da jeder Solarknoten einen eigenen kleinen Web-Server besitzt. 
+Die Statusinformationen der einzelnen Solarknotens können von den Usern auch lokal und dezentral über einen Web-Browser eingesehen werden, da jeder Solarknoten einen eigenen kleinen Web-Server besitzt.
 
 ![ISEMS HTML-Statusseite eingebettet in Freifunk-Luci](/images/ISEMS-Router-Status-HTML-Embedded-in-LUCI.png)
 
@@ -35,11 +35,11 @@ Durch Solarenergie lassen sich z.B. erhöhte Standorte für Community-Netzwerke 
 
 ## Warum liegt der Fokus von ISEMS auf Meshnetzwerken?
 
-Der Vorteil von Meshnetzwerken ist, dass sich jeder Knotenpunkt im Mesh mit beliebig vielen anderen Knoten verbinden kann ohne eine Master-Client-Hierarchie koordinieren zu müssen. Meshknoten arbeiten funktechnisch im Multipunkt-zu-Multipunkt-Modus – jeder Knoten kann mit jedem Knoten direkt kommunizieren, sofern sie sich in Funkreichweite befinden. Ein Meshroutingprotokoll sorgt darüber hinaus automatisch dafür, dass auch Knoten ausserhalb der direkten Reichweite erreichbar sind, indem alle Knoten als Vermittler (Relaisstationen) arbeiten und die Kommunikation weiterleiten. Fällt ein Knoten aus, sucht das Meshroutingprotokoll automatisch nach alternativen Routen. Kommen Knoten hinzu, werden sie automatisch in das Netz eingebunden. Für ISEMS ist das ein großer Vorteil. Man kann in einem Gebiet ISEMS-Solarknoten verteilen und hat eine laufende Kommunikationsinfrastuktur. 
+Der Vorteil von Meshnetzwerken ist, dass sich jeder Knotenpunkt im Mesh mit beliebig vielen anderen Knoten verbinden kann ohne eine Master-Client-Hierarchie koordinieren zu müssen. Meshknoten arbeiten funktechnisch im Multipunkt-zu-Multipunkt-Modus – jeder Knoten kann mit jedem Knoten direkt kommunizieren, sofern sie sich in Funkreichweite befinden. Ein Meshroutingprotokoll sorgt darüber hinaus automatisch dafür, dass auch Knoten ausserhalb der direkten Reichweite erreichbar sind, indem alle Knoten als Vermittler (Relaisstationen) arbeiten und die Kommunikation weiterleiten. Fällt ein Knoten aus, sucht das Meshroutingprotokoll automatisch nach alternativen Routen. Kommen Knoten hinzu, werden sie automatisch in das Netz eingebunden. Für ISEMS ist das ein großer Vorteil. Man kann in einem Gebiet ISEMS-Solarknoten verteilen und hat eine laufende Kommunikationsinfrastuktur.
 
 In der am meisten stromsparenden Low-Cost-Variante braucht man nur ein WLAN-Radio pro ISEMS-Station. Mit ein wenig mehr Aufwand und zwei WLAN-Radios pro Gerät bekommt man bedeutend mehr Performance und niedrigere Latenzen.
 
-**Meshing ist für ISEMS von großem Vorteil, aber für den Einsatz der Softwarelösung nicht zwingend.** Auf Grund der Vorteile bevorzugen wir die Vernetzung der Knotenpunkte per Funkmesh, aber es ist für den Einsatz der ISEMS-Software nicht grundsätzlich erforderlich, dass die Solarknoten meshen. Meshen vereinfacht die Anwendung und erhöht die Ausfallsicherheit. 
+**Meshing ist für ISEMS von großem Vorteil, aber für den Einsatz der Softwarelösung nicht zwingend.** Auf Grund der Vorteile bevorzugen wir die Vernetzung der Knotenpunkte per Funkmesh, aber es ist für den Einsatz der ISEMS-Software nicht grundsätzlich erforderlich, dass die Solarknoten meshen. Meshen vereinfacht die Anwendung und erhöht die Ausfallsicherheit.
 
 ## Was kostet ein ISEMS-Solarknoten?
 
@@ -47,12 +47,14 @@ Für ein einfaches, preiswertes und effizient konzipiertes System, das im Dauerb
 
 Hier ein Beispiel:
 
-        Router WR940N 25 Euro 
-        Wasserdichtes, UV-beständiges Gehäuse 20 Euro 
-        Akku Kung-Long 12 V 18 Ah 40 Euro 
-        Solarmodul 50 Watt 60 Euro 
-        Freifunk-Open-MPPT Solarcontroller 40 Euro 
-        Kleinteile (Befestigungsmaterial, Schrauben, Kabel) 20 Euro
+| Bauteil                                             |  Preis  |
+|-----------------------------------------------------|--------:|
+| Router WR940N                                       | 25 Euro |
+| Wasserdichtes, UV-beständiges Gehäuse               | 20 Euro |
+| Akku Kung-Long 12 V 18 Ah                           | 40 Euro |
+| Solarmodul 50 Watt                                  | 60 Euro |
+| Freifunk-Open-MPPT Solarcontroller                  | 40 Euro |
+| Kleinteile (Befestigungsmaterial, Schrauben, Kabel) | 20 Euro |
 
 
 In dieser Beispielrechnung sind keine externen Antennen aufgeführt. Der Solarnode mit rundstrahlenden Antennen kann z.B. auf einem Bergrücken stehen und von mehreren Dörfern aus einigen Kilometern Entfernung mit guten Richtantennen angefunkt werden. Es erzeugt kaum Windlast und kann an einem leichten Mast montiert werden.

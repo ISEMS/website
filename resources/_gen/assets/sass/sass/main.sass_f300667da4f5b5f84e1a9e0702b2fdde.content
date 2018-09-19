@@ -43,8 +43,7 @@ header {
     margin: 0 auto;
     padding-top: 2em;
     max-width: 40ch;
-    color: #293238;
-    text-shadow: 0 0 30px white; }
+    color: #293238; }
 
 footer {
   margin-top: 3em;
@@ -85,3 +84,5 @@ footer {
     left: 0;
     width: 100%;
     height: 100%; }
+  #content table {
+    width: 100%; }

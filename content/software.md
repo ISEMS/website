@@ -6,7 +6,7 @@ menu: header
 ---
 
 # Software
-Mit der ISEMS Software können Nutzer*innen sich einen Überblick über den Zustand ihrer
+Mit der ISEMS Software können Nutzer\*innen sich einen Überblick über den Zustand ihrer
 Solarinstallation machen. Dafür loggen sie sich im lokalen WLAN ein und besuchen die
 Management-Seite. Die Seite ist mobil-optimiert und gibt einen einfachen Überblick
 über den Zustand der Installation.
@@ -14,7 +14,7 @@ Management-Seite. Die Seite ist mobil-optimiert und gibt einen einfachen Überbl
 ![Screenshot der Übersichtsseite](/images/overview.png)
 
 Auf der ersten Seite werden alle Module aufgelistet und ihr Zustand angezeigt. Sollte
-es bei einigen Modulen Probleme geben (z.B. eine fast leere Batterie) wir dieses
+es bei einigen Modulen Probleme geben (z.B. eine fast leere Batterie), wird dieses
 Modul in der Liste besonders hervorgehoben.
 
 ![Screenshot der Detailsseite](/images/details.png)
