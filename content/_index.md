@@ -4,6 +4,8 @@ title: ISEMS Startseite
 
 # Was ist das Independent Solar Energy Mesh System (ISEMS)?
 
+Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen von energieautarken Solarroutern, entwickelt vor dem Hintergrund und zur Erweiterung von Community-(Mesh)-Netzwerken.
+
 # Wo hilft ISEMS?
 
 <div class="example">
@@ -11,7 +13,7 @@ title: ISEMS Startseite
     <div class='copy'>
         <h2> Schwer zugängliche Orte</h2>
         <p> ISEMS-Stationen können an Orten ohne bestehende Infrastruktur installiert
-        werden und somit schwer zugängliche Orte mit Netz versorgen.
+        werden und somit schwer zugängliche Orte mit einem Kommunikationsnetz versorgen.
         </p>
     </div>
 </div>
@@ -20,7 +22,7 @@ title: ISEMS Startseite
     <div class='copy'>
         <h2>In der Stadt</h2>
         <p> Da das ISEMS-System keine bestehende Infrastruktur benötigt, kann
-        es einfach auf Hausdächern installiert werden. <p>
+        es einfach auf Hausdächern installiert werden, ohne Stromleitungen auf das Dach zuführen. <p>
     </div>
     <img src="images/cities.svg">
 </div>
@@ -30,12 +32,11 @@ title: ISEMS Startseite
     <div class='copy'>
         <h2>Ad-Hoc</h2>
         <p>
-            Die einfache Installation von ISEMS ermöglicht die Versorgung von Notlagern oder Festivals.
+            Die einfache Installation von ISEMS ermöglicht die spontane Versorgung von Notlagern oder Festivals.
         </p>
     </div>
 </div>
 
-Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen von energieautarken Solarroutern, entwickelt vor dem Hintergrund und zur Erweiterung von Community-(Mesh)-Netzwerken.
 
 ![Mobiler Solarknoten auf dem Tempelhofer Feld](/images/freifunk-mast-thf-klein.jpg)
 
