@@ -22,7 +22,7 @@ Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen v
     <div class='copy'>
         <h2>In der Stadt</h2>
         <p> Da das ISEMS-System keine bestehende Infrastruktur benötigt, kann
-        es einfach auf Hausdächern installiert werden, ohne Stromleitungen auf das Dach zuführen. <p>
+        es einfach auf Hausdächern installiert werden, ohne Stromleitungen verlegen zu müssen. <p>
     </div>
     <img src="images/cities.svg">
 </div>
