@@ -61,15 +61,18 @@ footer {
     display: flex;
     max-width: 500px;
     justify-content: space-between;
-    padding: 0 10px; }
-    footer .footer-top-navigation li {
+    padding: 0 10px;
+    flex-wrap: wrap; }
+    footer .footer-top-navigation > li {
       list-style-type: none;
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 2em; }
   footer .footer-child-navigation {
     padding: 0;
     margin-top: 1em; }
     footer .footer-child-navigation li {
-      margin-top: .5em; }
+      margin-top: .5em;
+      list-style-type: none; }
     footer .footer-child-navigation a {
       color: #d8d4d4;
       font-size: .9em; }
