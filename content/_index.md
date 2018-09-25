@@ -9,13 +9,13 @@ Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen v
 # Wo hilft ISEMS?
 
 <div class="example">
-    <img src="images/villages.svg">
     <div class='copy'>
         <h2> Schwer zugängliche Orte</h2>
         <p> ISEMS-Stationen können an Orten ohne bestehende Infrastruktur installiert
         werden und somit schwer zugängliche Orte mit einem Kommunikationsnetz versorgen.
         </p>
     </div>
+    <img src="images/villages.svg">
 </div>
 
 <div class="example">
@@ -28,13 +28,13 @@ Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen v
 </div>
 
 <div class="example">
-    <img src="images/festivals.svg">
     <div class='copy'>
         <h2>Ad-Hoc</h2>
         <p>
             Die einfache Installation von ISEMS ermöglicht die spontane Versorgung von Notlagern oder Festivals.
         </p>
     </div>
+    <img src="images/festivals.svg">
 </div>
 
 
