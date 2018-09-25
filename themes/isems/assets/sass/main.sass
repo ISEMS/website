@@ -58,19 +58,37 @@ header
 footer
   margin-top: 3em
   background: $blue
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  color: white
+
+  img
+    max-width: 500px
 
   a, a:visited
     color: white
     text-decoration: none
 
-  ul
+  .footer-top-navigation
     display: flex
     max-width: 500px
     justify-content: space-between
     padding: 0 10px
     li
       list-style-type: none
+      margin-right: 20px
 
+  .footer-child-navigation
+    padding: 0
+    margin-top: 1em
+
+    li
+      margin-top: .5em
+
+    a
+      color: #d8d4d4
+      font-size: .9em
 
 #content
   margin: 0 auto
@@ -99,6 +117,8 @@ footer
     margin: 0 auto
     box-shadow: 0 0 4px 0 black
 
+  pre
+    overflow-x: auto
 
   figure
     margin: 0

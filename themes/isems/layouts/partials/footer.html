@@ -1,12 +1,41 @@
 <footer>
-    <nav>
-        <ul>
-            {{ range .Site.Menus.footer }}
-            <li> <a href="{{ .URL }}" title="{{ .Title }}">{{- .Title -}}</a> </li>
-            {{ end }}
-            <!--<li><a href="/documentation/">Technische Doku</a></li>-->
-            <!--<li><a href="/impressum/">Impresssum &amp; Datenschutz</a></li>-->
-            <li><a href="https://github.com/isems/">Github</a></li>
+  <nav>
+    <ul class="footer-top-navigation">
+      <li>Software
+        <ul class="footer-child-navigation">
+          <li><a href="/software">Web&nbsp;App</a></li>
+          <li><a href="https://github.com/isems/" style="display: flex; align-items: center">Github
+            <!--Icon modified from https://thenounproject.com/term/external-link/241003/, used with license from Noun Pro Membership-->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" style="fill: #d8d4d4; stroke: #d8d4d4; height: 1em"><g display="none"><polyline display="inline" fill="white" stroke="white" stroke-width="4" stroke-miterlimit="10" points="60,17 85,17 85,42  "></polyline><line display="inline" stroke-width="4" stroke-miterlimit="10" x1="47" y1="55" x2="85" y2="17"></line><g display="inline"><path stroke-width="4" stroke-miterlimit="10" d="M77,44v32c0,1.65-1.35,3-3,3H26    c-1.65,0-3-1.35-3-3V28c0-1.65,1.35-3,3-3h32"></path></g></g><g><path d="M87,15v27h-4V21.828L48.414,56.414l-2.828-2.828L80.172,19H60v-4H87z M75,76c0,0.542-0.458,1-1,1H26c-0.542,0-1-0.458-1-1   V28c0-0.542,0.458-1,1-1h32v-4H26c-2.757,0-5,2.243-5,5v48c0,2.757,2.243,5,5,5h48c2.757,0,5-2.243,5-5V44h-4V76z"></path></g></svg>
+          </a></li>
         </ul>
-    </nav>
+      </li>
+      <li>Kontakt
+        <ul class="footer-child-navigation">
+          <li><a href="/team">Team</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/impressum">Impressum</a></li>
+          <li><a href="/impressum#datenschutz">Datenschutz</a></li>
+        </ul>
+      </li>
+      <li>Dokumentation
+        <ul class="footer-child-navigation">
+          <li><a href="/documentation/system-messages/">Systemmeldungen</a></li>
+          <li><a href="/documentation/firmware/">Firmware</a></li>
+          <li><a href="/documentation/codes">CSV-Logformat</a></li>
+          <li><a href="/documentation/codes#isems-bit-error-hex-codes">Hex-Statuscodes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/hardware">Hardware</a>
+        <ul class="footer-child-navigation">
+          <li><a href="/hardware#1-geeignete-wlan-router">Router</a></li>
+          <li><a href="/hardware#2-der-freifunk-openmppt">OpenMPPT</a></li>
+          <li><a href="/hardware#3-bleiakkus">Akkus</a></li>
+          <li><a href="/hardware#installation">Installation</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <img src="/images/funders.svg" alt="">
 </footer>
