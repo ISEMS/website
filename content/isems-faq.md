@@ -3,6 +3,7 @@ title: FAQ
 url: /FAQ/
 draft: false
 menu: header
+layout: single
 ---
 
 # Kann man mit einem Solarknoten langfristig Geld sparen?
