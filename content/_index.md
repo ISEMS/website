@@ -1,5 +1,5 @@
 ---
-title: ISEMS Startseite
+title: Home
 ---
 
 # Was ist das Independent Solar Energy Mesh System (ISEMS)?
