@@ -22,38 +22,43 @@ h1, h2
   line-height: 1.2em
 
 header
-  background-image: url('/images/header-pic.jpg')
-  background-size: cover
-  background-position-y: 35%
-  min-height: 300px
-  width: 100%
-  padding: 0 30px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 10px
+  background: $blue
+  color: $white
+  h1
+    margin: 0
 
   a, a:visited
     text-decoration: none
-    color: $black
+    color: $white
 
   a.active
     font-weight: bold
 
-  .topbar
+  ul
     display: flex
-    justify-content: space-between
-    align-items: center
-    ul
-      display: flex
-      justify-content: space-around
-      padding-right: 40px
-      li
-        list-style-type: none
-        padding-left: 20px
+    justify-content: space-around
+    li
+      list-style-type: none
+      padding-left: 20px
+
+.hero
+  background-image: url('/images/hero.jpg')
+  background-size: cover
+  background-position-y: 50%
+  min-height: 500px
+  width: 100%
+  padding: 0 30px
+  display: flex
+  align-items: center
+  justify-content: center
 
   .claim
-    margin: 0 auto
-    padding-top: 2em
     max-width: 40ch
-    color: $black
-
+    color: $white
 
 footer
   margin-top: 3em
