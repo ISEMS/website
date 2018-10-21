@@ -46,7 +46,7 @@ Das Konzept baut auf dem Freifunk-OpenMPPT-Solarcontroller auf und ist dazu vorg
 
 Das ISEMS-System besteht aus einer Web-App, die eine Übersicht über die Betriebsdaten und Fehlermeldungen aller Solarknoten bereit stellt. Die Web-App lässt sich auf einem Kleincomputer wie dem Raspberry Pi hosten. In den Solarroutern arbeitet eine Datenlogger- und Analysesoftware, die die Daten des lokalen Systems aufbereitet. Die Daten aller beteiligten Solarknoten werden von der Web-App abgerufen und zu einer Übersicht verarbeitet.
 
-![Physikalischer Layer und Softwarelayer](/images/Hardware-Software-Graphs.jpg)
+![Physikalischer Layer und Softwarelayer](/images/ISEMS-data-flow.svg)
 
 
 Die Statusinformationen der einzelnen Solarknotens können von den Usern auch lokal und dezentral über einen Web-Browser eingesehen werden, da jeder Solarknoten einen eigenen kleinen Web-Server besitzt.
