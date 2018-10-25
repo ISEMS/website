@@ -11,9 +11,9 @@ url: /team/
         <div class="social">
             <h1> Elektra Wagenrad </h1>
             <ul>
-            <li><a href="twitter.com/elektra42">Twitter</a></li>
-            <li><a href="twitter.com/elektra42">Github</a></li>
-            <li><a href="twitter.com/elektra42">Website</a></li>
+            <li><a href="https://twitter.com/elektra42">Twitter</a></li>
+            <li><a href="https://github.com/elektra42">Github</a></li>
+            <li><a href="http://dogmatic-podcast.info">Website</a></li>
             </ul>
         </div>
     </div>
