@@ -115,7 +115,8 @@ footer {
       box-shadow: none;
       flex-basis: 50%;
       width: 50%;
-      margin: 0 0; }
+      margin: 0 0;
+      border: none !important; }
     #content .example .copy {
       padding: 10px;
       flex-basis: 50%; }
