@@ -2,5 +2,12 @@ baseURL = "https://isems.netlify.com/"
 languageCode = "en-us"
 title = "ISEMS"
 theme = "isems"
+DefaultContentLanguage = "de"
 
 sectionPagesMenu = "main"
+
+[languages]
+  [languages.de]
+    LanguageName = "Deutsch"
+  [languages.en]
+    LanguageName = "English"

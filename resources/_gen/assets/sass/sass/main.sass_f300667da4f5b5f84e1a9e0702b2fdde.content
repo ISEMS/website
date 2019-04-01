@@ -30,12 +30,33 @@ header {
     color: #f5f5f5; }
   header a.active {
     font-weight: bold; }
+  header .menu {
+    display: flex;
+    align-items: center; }
   header ul {
     display: flex;
     justify-content: space-around; }
     header ul li {
       list-style-type: none;
       padding-left: 20px; }
+  header .language-container {
+    position: relative; }
+    header .language-container button {
+      outline: 0;
+      border: none;
+      background: transparent;
+      color: #f5f5f5;
+      font-size: 16px;
+      margin-left: 2em; }
+  header .language-menu {
+    position: absolute;
+    display: none;
+    right: 0;
+    background: #42596a; }
+    header .language-menu.visible {
+      display: block; }
+    header .language-menu li {
+      padding: 10px; }
 
 .hero {
   background-image: url("/images/hero.jpg");
