@@ -3,89 +3,90 @@
 
 # What is the Independent Solar Energy Mesh System? (ISEMS)?
 
-Das Independent Solar Energy Mesh System ist eine Softwarelösung zum Betreuen von energieautarken Solarroutern, entwickelt vor dem Hintergrund und zur Erweiterung von Community-(Mesh)-Netzwerken.
+The Independent Solar Energy Mesh System is a open source software solution to monitor and maintain energy autonomous solar routers. The background of this project is the expansion of wireless community mesh networks into remote places or for disaster recovery.
 
-# Wo hilft ISEMS?
+# Where can ISEMS help you?
 
 <div class="example">
     <div class='copy'>
-        <h2> Schwer zugängliche Orte</h2>
-        <p> ISEMS-Stationen können an Orten ohne bestehende Infrastruktur installiert
-        werden und somit schwer zugängliche Orte mit einem Kommunikationsnetz versorgen.
+        <h2>Remote places that lack infrastucture</h2>
+        <p> ISEMS stations can be installed in locations without existing infrastructure, providing a hard-to-reach location with a communications network.
         </p>
     </div>
-    <img src="images/villages.svg">
+    <img src="/images/villages.svg">
 </div>
 
 <div class="example">
     <div class='copy'>
-        <h2>In der Stadt</h2>
-        <p> Da das ISEMS-System keine bestehende Infrastruktur benötigt, kann
-        es einfach auf Hausdächern installiert werden, ohne Stromleitungen verlegen zu müssen. <p>
+        <h2>In the city</h2>
+        <p> Since the ISEMS system does not require an existing infrastructure, it can easily be installed on rooftops without having to lay power lines or drill holes. <p>
     </div>
-    <img src="images/cities.svg">
+    <img src="/images/cities.svg">
 </div>
 
 <div class="example">
     <div class='copy'>
         <h2>Ad-Hoc</h2>
         <p>
-            Die einfache Installation von ISEMS ermöglicht die spontane Versorgung von Notlagern oder Festivals.
+            The easy installation of ISEMS allows ad-hoc communication service for emergency camps or festivals.
         </p>
     </div>
-    <img src="images/festivals.svg">
+    <img src="/images/festivals.svg">
 </div>
 
 
-![Mobiler Solarknoten auf dem Tempelhofer Feld](/images/freifunk-mast-thf-klein.jpg)
+![Mobile Solarnode at Tempelhofer Feld in Berlin](/images/freifunk-mast-thf-klein.jpg)
 
-Das Konzept baut auf dem Freifunk-OpenMPPT-Solarcontroller auf und ist dazu vorgesehen, unabhängige Netzknoten an schwer zu erschließenden Standorten mit Solarenergie zu betreiben und zu managen.
+The concept builds on the Freifunk OpenMPPT solar controller and is designed to operate and manage independent network nodes in hard-to-reach locations using solar energy.
 
 ![Hardware](/images/Blockschaltbild-Foto-klein.png)
 
-Das ISEMS-System besteht aus einer Web-App, die eine Übersicht über die Betriebsdaten und Fehlermeldungen aller Solarknoten bereit stellt. Die Web-App lässt sich auf einem Kleincomputer wie dem Raspberry Pi hosten. In den Solarroutern arbeitet eine Datenlogger- und Analysesoftware, die die Daten des lokalen Systems aufbereitet. Die Daten aller beteiligten Solarknoten werden von der Web-App abgerufen und zu einer Übersicht verarbeitet.
+The ISEMS system consists of a web app that provides an overview of the operating data and error messages of all solar nodes. The web app can be hosted on a small computer like the Raspberry Pi. The solar routers use a data logger and analysis software that processes the data of the local system. The data of all participating solar nodes are retrieved from the Web App and processed into an overview.
 
-![Physikalischer Layer und Softwarelayer](/images/ISEMS-data-flow.svg)
+![Physical Layer and Software Layer](/images/ISEMS-data-flow.svg)
 
 
-Die Statusinformationen der einzelnen Solarknotens können von den Usern auch lokal und dezentral über einen Web-Browser eingesehen werden, da jeder Solarknoten einen eigenen kleinen Web-Server besitzt.
+The status information of the individual solar nodes can also be viewed locally and decentrally by the users via a web browser, as each solar node has its own small web server.
 
-![ISEMS HTML-Statusseite eingebettet in Freifunk-Luci](/images/ISEMS-Router-Status-HTML-Embedded-in-LUCI.png)
+![ISEMS HTML status page embedded in Freifunk-Luci](/images/ISEMS-Router-Status-HTML-Embedded-in-LUCI.png)
 
-Auf der untersten Hardware- und Software-Ebene von ISEMS befindet sich die ISEMS-Firmware für den Freifunk-OpenMPPT-Solarcontroller, eine Elektronik auf der Basis von Open-Source und Open-Hardware. Der Freifunk-OpenMPPT-Solarcontroller ist die Ausgangsbasis des Projektes.
+The lowest hardware and software level of ISEMS is based on the ISEMS firmware for the Freifunk OpenMPPT solar controller, an open source and open hardware electronics design. The Freifunk OpenMPPT solar controller is the starting point of the project.
 
-![Platine des Freifunk-OpenMPPT-Reglers Typ A](/images/freifunk-mppt-innen.jpg)
+![PCB of the Freifunk-OpenMPPT-Controller Type A](/images/freifunk-mppt-innen.jpg)
 
-Das typische Anwendungsszenario von ISEMS: Solarnodes verbinden sich mit dem bestehenden Meshnetzwerk einer Community oder bilden lokale Netze, die nur aus Solarknoten bestehen.  Jeder Knoten stellt auch einen WLAN-Hotspot bereit, mit dem sich Endgeräte verbinden können, um das Mesh zu nutzen. Solarknoten mit ISEMS können preiswert nahezu überall aufgestellt werden.
+The typical application scenario of ISEMS: Solar codes connect to the existing mesh network of a community or form their own local network, which may consist only of solar nodes. Each node also provides a Wi-Fi hotspot that end devices like smart phones can connect to use the mesh. Solar nodes with ISEMS can be installed inexpensively almost anywhere.
 
-## Wo macht der Einsatz eines solarbetriebenen Meshknotens Sinn?
+## Where does the use of a solar powered mesh node make sense?
 
-Überall da, wo es kein Stromnetz für Kommunikationstechnik gibt oder spontan ein drahtloses WLAN-Netzwerk gebraucht wird. Solche Anwendungsszenarien gibt es nicht nur in Community-Netzwerken, sondern auch in Krisengebieten, nach Katastrophen, Stromausfällen, in Flüchtingslagern oder Schwellen- und Entwicklungsländern. Auch in reichen Ländern wie Deutschland, wo es ausserhalb der Ballungsgebiete Funklöcher gibt, kann ISEMS sinnvoll eingesetzt werden.
+Wherever there is no power network for communication technology or spontaneously a wireless Wi-Fi network is needed. Such application scenarios exist not only in community networks, but also in crisis areas, after disasters, power outages, in refugee camps or emerging and developing countries. ISEMS can also be used effectively in rich countries such as Germany, where there are dead spots outside the metropolitan areas.
 
-Durch Solarenergie lassen sich z.B. erhöhte Standorte für Community-Netzwerke erschließen, wo es keinen Strom gibt: Auf einem Berg, der zwischen zwei Dörfern die Funkstrecke blockiert. Auf einem Dach ohne Strom, weil der Eigentümer nicht will, dass man Löcher bohrt. Für die Wasserstand-Messstation am Fluss, für geologische Messungen auf einem Gletscher oder Vulkan...
+By using solar energy you can install a node where there is no power: on a mountain top that blocks the radio link between two villages. On a roof without electricity, because the owner does not allow you to drill holes or is concerned about the energy bill. For a water level measuring station on the river, for geological measurements on a glacier or volcano ...
 
-## Warum liegt der Fokus von ISEMS auf Meshnetzwerken?
 
-Der Vorteil von Meshnetzwerken ist, dass sich jeder Knotenpunkt im Mesh mit beliebig vielen anderen Knoten verbinden kann ohne eine Master-Client-Hierarchie koordinieren zu müssen. Meshknoten arbeiten funktechnisch im Multipunkt-zu-Multipunkt-Modus – jeder Knoten kann mit jedem Knoten direkt kommunizieren, sofern sie sich in Funkreichweite befinden. Ein Meshroutingprotokoll sorgt darüber hinaus automatisch dafür, dass auch Knoten ausserhalb der direkten Reichweite erreichbar sind, indem alle Knoten als Vermittler (Relaisstationen) arbeiten und die Kommunikation weiterleiten. Fällt ein Knoten aus, sucht das Meshroutingprotokoll automatisch nach alternativen Routen. Kommen Knoten hinzu, werden sie automatisch in das Netz eingebunden. Für ISEMS ist das ein großer Vorteil. Man kann in einem Gebiet ISEMS-Solarknoten verteilen und hat eine laufende Kommunikationsinfrastuktur.
+## Why is ISEMS focusing on mesh networks?
 
-In der am meisten stromsparenden Low-Cost-Variante braucht man nur ein WLAN-Radio pro ISEMS-Station. Mit ein wenig mehr Aufwand und zwei WLAN-Radios pro Gerät bekommt man bedeutend mehr Performance und niedrigere Latenzen.
+The advantage of mesh networks is that each node in the mesh can connect to any number of other link-local nodes without having to coordinate a master-client hierarchy. Mesh nodes work by radio in multipoint-to-multipoint mode - each node can communicate directly with each node if they are within radio range. Furthermore, a mesh routing protocol automatically ensures that nodes outside the direct range can also be reached, because all nodes can act as relay stations and forward the communication, if required. If a node fails, the mesh routing protocol automatically searches for alternate routes. If nodes are added, they are automatically integrated into the network. This is a big advantage for ISEMS.
 
-**Meshing ist für ISEMS von großem Vorteil, aber für den Einsatz der Softwarelösung nicht zwingend.** Auf Grund der Vorteile bevorzugen wir die Vernetzung der Knotenpunkte per Funkmesh, aber es ist für den Einsatz der ISEMS-Software nicht grundsätzlich erforderlich, dass die Solarknoten meshen. Meshen vereinfacht die Anwendung und erhöht die Ausfallsicherheit.
+In the most energy-efficient low-cost version, you only need one Wi-Fi radio per ISEMS station. With a little more effort and two wireless radios per device you get significantly more performance and lower latencies.
 
-## Was kostet ein ISEMS-Solarknoten?
 
-Für ein einfaches, preiswertes und effizient konzipiertes System, das im Dauerbetrieb z.B. in Norddeutschland das ganze Jahr funktioniert, muss man im Selbstbau etwa 200-250 Euro für Material ausgeben.
+**Meshing is of great advantage for ISEMS, but not mandatory for the use of our software solution.** Due to the advantages, we prefer to connect the nodes via wireless mesh networking, but mesh networking is not essential for the use of the ISEMS software. Mesh networking simplifies the use of our application and increases the reliability of the network.
 
-Hier ein Beispiel:
+## How much does an ISEMS solar node cost?
 
-| Bauteil                                             |  Preis  |
+For a simple, inexpensive and efficiently designed system, which  works all year in continuous operation e.g. in northern Germany, you have to spend about 200-250 euros for material, if you build it yourself.
+
+Here's an example calculation:
+
+
+| Compontent                                          |  Price  |
 |-----------------------------------------------------|--------:|
 | Router WR940N                                       | 25 Euro |
-| Wasserdichtes, UV-beständiges Gehäuse               | 20 Euro |
-| Akku Kung-Long 12 V 18 Ah                           | 40 Euro |
-| Solarmodul 50 Watt                                  | 60 Euro |
+| Wasserproof, UV-resistant housing                   | 20 Euro |
+| Battery Kung-Long 12 V 18 Ah                        | 40 Euro |
+| Solar module 50 Watt                                | 60 Euro |
 | Freifunk-Open-MPPT Solarcontroller                  | 40 Euro |
-| Kleinteile (Befestigungsmaterial, Schrauben, Kabel) | 20 Euro |
+| Small assembly parts                                | 20 Euro |
 
 
-In dieser Beispielrechnung sind keine externen Antennen aufgeführt. Der Solarnode mit rundstrahlenden Antennen kann z.B. auf einem Bergrücken stehen und von mehreren Dörfern aus einigen Kilometern Entfernung mit guten Richtantennen angefunkt werden. Es erzeugt kaum Windlast und kann an einem leichten Mast montiert werden.
+In this example calculation, no external antennas are listed. A solar node with an omnidirectional antennas may e.g. stand on a ridge and can operate as a relay between several villages a few kilometers away, that connect with good directional antennas to it. It hardly generates wind load and can be mounted on a light duty mast.
