@@ -79,7 +79,7 @@ For a simple, inexpensive and efficiently designed system, which  works all year
 Here's an example calculation:
 
 
-| Compontent                                          |  Price  |
+| Component                                           | Price   |
 |-----------------------------------------------------|--------:|
 | Router WR940N                                       | 25 Euro |
 | Wasserproof, UV-resistant housing                   | 20 Euro |

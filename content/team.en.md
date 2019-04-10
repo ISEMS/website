@@ -19,7 +19,7 @@ url: /team/
     </div>
     <p> Elektra has been actively involved in developing wireless mesh technology for community networks such as Freifunk and has taught the use of WiFi technology in Bangladesh, India, Chile, Tanzania, South Africa, among others. She is the author of the German book 'Mesh' and co-author of the book "Wireless Networking in the Developing World", which is under the Creative Commons license. <br/ > <br/ >
     
-    Elektra works as a freelance software and hardware developer and has initiated and worked on the B.A.T.M.A.N. routing algorithm developed for community wireless networks like Freifunk. She has also done electronics engineering on a frequency converter (a so called transverter) for the use of Wi-Fi in TV whitespace bands. <br /><br/ >
+    Elektra works as a freelance software and hardware developer and has initiated and worked on the B.A.T.M.A.N. routing algorithm developed for community wireless networks like Freifunk. She has also done electronics engineering of a frequency converter (a so called transverter) for the use of Wi-Fi in TV whitespace bands. <br /><br/ >
     
     Several years ago she was also involved in the development of the Mesh Potato hardware and software for the Villagetelco project, a wireless router for wireless ad hoc networks in developing and emerging countries. <br /> <br />
 
