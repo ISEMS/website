@@ -33,12 +33,35 @@ Es gilt, die Anzahl der tiefen Entladezyklen möglichst klein zu halten.
 Der Freifunk-Open-MPPT kann aber so konfiguriert werden, dass das System abgeschaltet wird, sobald der Akku geringfügig entladen wird und nur dann eingeschaltet wird, wenn der Akku voll ist. Dadurch würde sich die Akkulebensdauer bis zur Haltbarkeit der maximalen Lagerdauer annähern.
 
 
-# Eignen sich auch Raspberry Pi und Co?
+# Sind Single-Board-Computer wie Raspberry Pi und dergleichen für ISEMS geeignet?
 
-Zunächst: Ein sparsamer Einplatinen-Computer mit mehr CPU, RAM und Massenspeicher ist ideal um die ISEMS Web-App zu hosten. Man kann ihn per Funk oder per Ethernet mit einem Solarknoten verbinden, wobei Ethernet sich i.d.R. besser eignet, weil es stabiler und zuverlässiger ist. Auch kann man Raspberry Pi und Co problemlos an den Freifunk-OpenMPPT-Solarconroller anschließen und die ISEMS Datenlogger- und Datenanalysesoftware darin laufen lassen. Dazu braucht man nur die Softwarekomponenten **stty**, Lua, UCI und eine serielle Verbindung zum Freifunk-OpenMPPT-Solarcontroller mit drei Jumper-Kabeln.
+Wenn man die ISEMS-Web-App in einem Raspberry Pi ausführen möchte, lautet die Antwort "Ja, natürlich. Eine gute Wahl." Selbst ein preisgünstiger Einplatinencomputer verfügt über mehr CPU, RAM und Speicher als ein kleiner WLAN-Router, verbraucht relativ wenig Strom und arbeitet geräuschlos. Daher eignet er sich ideal zum Hosten der ISEMS-Web-App. Es kann über WLAN oder Ethernet mit dem ISEMS-Netz verbunden werden.
 
-Als WLAN-Router eignet sich ein RaspPi aber weniger. Funken und insbesondere Meshen ist nicht die Stärke von Einplatinen-Computern. Die WLAN-Performance ihrer integrierten Schnittstellen ist beschränkt, was Reichweite, Vielseitigkeit, Datendurchsatz und Treiberstabilität angeht. Wenn aber ein RaspPi nur Daten sammeln und verschicken soll und sich nur als WLAN-Client mit dem Mesh verbindet, geht es. Für einen Umweltsensor o.ä. bieten Raspberry Pi und Co viele interessante Funktionen.
+Falls man den Single Board-Computer auch mit Solarstrom betreiben möchte, ist der RaspberryPi Zero W sehr stromsparend und kann über WLAN mit dem ISEMS-Netz verbunden werden. Er ist klein, kostengünstig, ausreichend, wenn auch etwas langsam.
 
+Falls man einen Raspberry Pi als eigentlichen Solar-Mesh-Router verwenden möchten, lautet die Antwort "Ja, aber ..."
+
+* Zumindest Multi-Core-SBCs (Single Board Computer) sind relativ leistungshungrig. Raspberry Pi 3B und 3B + sind daher nicht die erste Wahl für den kostengünstigen Betrieb mit Solarbetrieb. Auf der anderen Seite verbraucht der Zero W bei niedriger CPU-Last nur einen geringen Stromverbrauch von 0,5 Watt bei 5 Volt, auch wenn WLAN und Bluetooth aktiv sind. Durch die Deaktivierung von WLAN sinkt der Stromverbrauch im Leerlauf auf 0,35 Watt.
+
+* Fortgeschrittene WLAN-Betriebsarten und -Funktionen sind nicht die Stärke der integrierten WLAN-Lösungen auf SBCs. Die WLAN-Leistung ihrer integrierten Funkschnittstellen und Antennen ist hinsichtlich Reichweite, Vielseitigkeit und Datendurchsatz begrenzt. Ihnen fehlen auch Funktionen, die man leicht vermissen kann.
+
+* Gute WLAN-Chipsätze und -Treiber können zwei oder mehr virtuelle drahtlose Schnittstellen auf einer physischen drahtlosen Schnittstelle emulieren. (Verwirrenderweise werden virtuelle drahtlose Schnittstellen von der Industrie als VAPs = virtueller Accesspoint bezeichnet, obwohl sie je nach den Fähigkeiten der Chipsätze und Treiber APs, Clients, Ad-hoc oder 802.11s-Knoten sein können).
+
+* Für ein "echtes" Multipoint-Multipoint-Mesh-Netzwerk muss mindestens der 802.11s- oder der Ad-hoc-Modus mit der WLAN-Schnittstelle verfügbar sein. Der Zero W kann den Ad-hoc-Modus, aber nicht 802.11s. Er kann also meshen.
+
+* Man kann einen Pseudo-Mesh-Modus implementieren, wenn man mindestens ein AP-VAP und ein Client-VAP pro physischer WLAN-Schnittstelle konfiguieren kann, um Multi-Hop-Ketten aus miteinander verbundenen AP + Client-Knoten zu erstellen. Eine solche Kaskaden-Lösung kann jedoch nicht als vollwertiges Meshnetz arbeiten. In vielen Fällen kann das jedoch ausreichend sein. Eine solche Pseudo-Mesh-Netzwerkstruktur gleicht einer Baumstruktur mit Verzweigungen. Für die IoT-Marketing-Community ist ein solches Fake-Mesh in der Regel ausreichend, um zu behaupten, dass sie ein echtes Maschennetz haben ;)
+
+* Die meisten WLAN-Communities sind es gewohnt, mindestens zwei virtuelle WLAN-Schnittstellen pro physischer WLAN-Schnittstelle auf ihren Mesh-Knoten einzurichten: Eine Accesspoint-VAP wird kombiniert mit einer Ad-hoc-VAP oder einer 802.11s-VAP. 802.11s wird von den in Zero W, Raspberry 3B und 3B + verwendeten WLAN + Bluetooth-Chips nicht unterstützt, und es kann nur entweder der AP oder Ad-hoc-Modus ausgeführt werden, jedoch nicht beides gleichzeitig.
+
+* Hard-MAC-Chipsätze, wie in den Raspberry Pi's sind oft durch die Anzahl der Peers begrenzt, die sie im AP- oder Ad-hoc-Modus verarbeiten können. Normalerweise funktioniert es mit bis zu 7 Peers, die lokal per WiFi angebunden sind, aber nicht mehr.
+
+* Das WiFi-ACK-Timing lässt sich nicht einstellen. Dies ist erforderlich, damit WLAN-Richtfunkstrecken funktionieren, die länger als 1-2 Kilometer sind.
+
+Man kann SBCs wie die unterschiedlichen Raspberry Pi-Modelle (und ähnliche) einfach an den Freifunk-Open-MPPT-Solarregler anschließen und die ISEMS-Datenlogger- und Datenanalysesoftware sowie gleichzeitig alle Arten von Sensoren und ein HAT und die ISEMS-Webanwendung usw. anwenden. Zum Lesen von Daten aus dem Freifunk-Open-MPPT benötigt man lediglich die Softwarekomponenten **stty**, Lua, UCI. Für den Anschluss der seriellen Ports des Pi und des Freifunk-Open-MPPT-Solarreglers sind nur drei Jumper-Kabel erforderlich, da der serielle Port mit passendem Logikpegel bereits auf dem Pin-Header der Pi's verfügbar ist.
+
+Nebenbei:
+
+Wir haben mit der Anbindung an das Freifunk-Mesh-Netzwerk im Ad-hoc-Modus experimentiert, während der Zero W gleichzeitig als Bluetooth-Netzwerkzugriffspunkt dient. Auf diese Weise können wir über Bluetooth im Mesh und im Internet surfen. Die Datenrate der Bluetooth-Clients beim Surfen über den Bluetooth-AP des Zero W ist zwar langsamer (etwa 100-130 KByte/s), dafür geht der Stromverbrauch auf der Seite der Endgeräte (Smartphone, Laptop, Tablet) sehr stark zurück. Ihre Batterien halten also sehr viel länger, wenn Sie ständig mit dem lokalen drahtlosen Netzwerk verbunden sind.
 
 # Funktioniert die ISEMS-Software auch ohne Mesh?
 
@@ -46,9 +69,15 @@ Ja, sie ist universell.
 
 # Warum fokussiert Ihr Euch auf Meshnetzwerke?
 
-Man kann natürlich auch Geräte ohne Mesh untereinander vernetzen, wenn deren Radios nicht im Multipunkt-zu-Multipunkt-Modus, sondern im Punkt-zu-Punkt oder Punkt-zu-Multipunkt-Modus laufen. Ein Meshroutingprotokoll ist trotzdem immer von Vorteil, sonst muss man Routen von Hand eintragen, oder ein anderes Routingprotokoll für klassische Internet-Infrastruktur nutzen, die aber eigentlich nicht für Funkanwendungen taugen. 
+Funk ist ein Broadcastmedium auf der physikalischen Ebene, d.h. jedes Gerät in Reichweite empfängt sowieso die Daten, die auf demselben Kanal übertragen werden. Der Grund dafür, dass WLAN-Clients auf dem MAC-Layer im traditionellen Accesspoint-Client-Modell nicht direkt miteinander kommunizieren können, ist eigentlich artifiziell und entseht durch das Protokolldesign auf dem MAC-Layer. Der Grund, warum sich die Entwicklung von WiFi historisch von den ersten Punkt-zu-Punkt-Verbindungen zu einem Nabe-und-Speiche-Modell entwickelt hat, ist wahrscheinlich auf das etablierte hierarchische Denken, die Vereinfachung der MAC-Implementierung und Management-Überlegungen zurückzuführen.
 
-In Community-Netzwerken wie z.B. Freifunk oder von kommerziellen WLAN-Serviceprovidern wird der Punkt-zu-Punkt oder Punkt-zu-Multipunkt-Modus überwiegend für schnelle Backbone-Verbindungen angewendet. Dafür kommen dann mehre schnelle und energiehungrige Router pro Standort zum Einsatz, die über einen Switch verbunden sind. Für Solarbetrieb ist das ungeeignet, weil die Solaranlage ziemlich teuer wäre. Für einen solarbetriebenen Backbone-Standort muss man etwas tiefer in die Trickkiste greifen.
+Wenn zwei Clients in einem AP-Netzwerk Daten austauschen, wird ihre Kommunikation im besten Fall auf die Hälfte der Netzwerkbandbreite reduziert. Nehmen wir an, dass Client-Station A Daten an Station B sendet. Station A sendet die Daten an AP X, AP X sendet sie an Station B weiter. Anstelle einer direkten Übertragung von A nach B gibt es zwei. Das ist sogar oft noch wesentlich ineffizienter, als es zunächst erscheint: In einer Bürosituation befinden sich Station A und Station B möglicherweise auf einem Tisch, 30 cm voneinander entfernt und 50 Meter vom AP X entfernt, mit dem sie assoziiert sind. Eine direkte Übertragung von A nach B würde im Ad-Hoc-Modus in einem Sendevorgang bei maximaler Geschwindigkeit erfolgen, stattdessen braucht es zwei Übertragungen über AP X dazwischen, die wegen der Entfernung mit einer viel niedrigeren Geschwindigkeit abläuft und sich deshalb auch noch halbiert. Da greift man dann doch lieber zum Netzwerkkabel oder kopiert die Daten auf ein Trägermedium.
+
+Es ist möglich, größere drahtlose Netzwerklösungen auch ohne Maschennetzwerke zu bauen. Unser Hauptgrund wäre jedoch, wenn die WLAN-Funkgeräte nicht für den zuverlässigen Betrieb im Multipoint-zu-Multipoint-Modus eingerichtet werden können, wie dies bei den meisten Endgeräten der Fall ist. Trotzdem ist der Einsatz eines Mesh-Routing-Protokoll auch in diesem Fall von Vorteil, ansonsten müssen Routen manuell eingeben oder korrigiert werden. Alternativ kann man auch ein anderes Routing-Protokoll für die klassische Internetinfrastruktur verwenden. Diese sind jedoch nicht, oder nur sehr bedingt, für Funkanwendungen geeignet.
+
+Für Richtfunkverbidungen spielen diese Betrachtungen natürlich keine Rolle.
+
+In Community-Netzwerken wie z.B. Freifunk oder von kommerziellen WLAN-Serviceprovidern wird der Punkt-zu-Punkt oder Punkt-zu-Multipunkt-Modus überwiegend für schnelle Backbone-Verbindungen angewendet. Dafür kommen dann mehre schnelle und energiehungrige Router pro Standort zum Einsatz, die über einen Switch verbunden sind. Für Solarbetrieb ist das ungeeignet, weil die Solaranlage ziemlich teuer wäre. Für einen solarbetriebenen Backbone-Standort muss man etwas tiefer in die Trickkiste greifen. Aber auch hier kommen natürlich Routingprotokolle zum Einsatz.
 
 # Welche Vor-und Nachteile haben Multi-Radio-Setups?
 
