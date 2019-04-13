@@ -1,6 +1,5 @@
 ---
-title: Logfile csv and error codes
-url: /documentation/codes
+Title: Logfile csv and error codes
 draft: false
 ---
 
@@ -67,6 +66,6 @@ Bit_9:  1 = Low battery temperature.
 
 Bit_10: 1 = Firmware upgrade not allowed
 
-Bit_11: 1 = 
+Bit_11: 1 = unused so far
 	
 ~~~

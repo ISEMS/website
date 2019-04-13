@@ -1,7 +1,6 @@
 ---
-Title: Logfile csv and error codes
+title: Logfile csv and error codes
 url: /documentation/codes
-draft: false
 ---
 
 # ISEMS CSV file format and hex error codes
@@ -67,6 +66,6 @@ Bit_9:  1 = Low battery temperature.
 
 Bit_10: 1 = Firmware upgrade not allowed
 
-Bit_11: 1 = unused so far
+Bit_11: 1 = 
 	
 ~~~

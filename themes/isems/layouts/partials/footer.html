@@ -10,31 +10,15 @@
           </a></li>
         </ul>
       </li>
-      <li>Kontakt
-        <ul class="footer-child-navigation">
-          <li><a href="/team">Team</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/impressum#datenschutz">Datenschutz</a></li>
-        </ul>
+      {{ range .Site.Menus.footer }}
+      <li>{{ .Name }}
+         <ul class="footer-child-navigation">
+        {{ range .Children }}
+           <li><a href="{{ .URL | relLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+        {{ end}}
+         </ul>
       </li>
-      <li>Dokumentation
-        <ul class="footer-child-navigation">
-          <li><a href="/documentation/system-messages/">Systemmeldungen</a></li>
-          <li><a href="/documentation/firmware/">Firmware</a></li>
-          <li><a href="/documentation/codes">CSV-Logformat</a></li>
-          <li><a href="/documentation/codes#isems-bit-error-hex-codes">Hex-Statuscodes</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/hardware">Hardware</a>
-        <ul class="footer-child-navigation">
-          <li><a href="/hardware#1-geeignete-wlan-router">Router</a></li>
-          <li><a href="/hardware#2-der-freifunk-openmppt">OpenMPPT</a></li>
-          <li><a href="/hardware#3-bleiakkus">Akkus</a></li>
-          <li><a href="/hardware#installation">Installation</a></li>
-        </ul>
-      </li>
+      {{ end }}
     </ul>
   </nav>
   <img src="/images/funders.svg" alt="">

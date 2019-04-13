@@ -1,6 +1,5 @@
 ---
 Title: Team
-url: /team/
 ---
 
 # Team

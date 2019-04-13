@@ -1,6 +1,6 @@
 ---
 title: FAQ
-url: /FAQ/
+url: /faq
 draft: false
 menu: header
 layout: single

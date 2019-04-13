@@ -1,9 +1,5 @@
 ---
 Title: FAQ
-url: /FAQ/
-draft: false
-menu: header
-layout: single
 ---
 
 # Can I save money in the long term with a solar node?

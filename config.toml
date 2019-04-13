@@ -11,3 +11,181 @@ sectionPagesMenu = "main"
     LanguageName = "Deutsch"
   [languages.en]
     LanguageName = "English"
+
+
+[[languages.en.menu.footer]]
+  identifier = "contact"
+  name = "Contact"
+  weight = 1
+
+  [[languages.en.menu.footer]]
+    parent = "contact"
+    name = "Team"
+    url = "/team"
+    weight = 1
+
+  [[languages.en.menu.footer]]
+    parent = "contact"
+    url = "/faq"
+    name = "FAQ"
+    weight = 2
+
+  [[languages.en.menu.footer]]
+    parent = "contact"
+    url = "/impressum"
+    name = "Imprint"
+    weight = 3
+
+  [[languages.en.menu.footer]]
+    parent = "contact"
+    url = "/impressum#datenschutz"
+    name = "Data privacy"
+    weight = 4
+
+[[languages.en.menu.footer]]
+  identifier = "documentation"
+  name = "Documentation"
+  weight = 2
+
+  [[languages.en.menu.footer]]
+    parent = "documentation"
+    url = "/documentation/system-messages/"
+    name = "System messages"
+    weight = 1
+
+  [[languages.en.menu.footer]]
+    parent = "documentation"
+    url = "/documentation/firmware/"
+    name = "Firmware"
+    weight = 2
+
+  [[languages.en.menu.footer]]
+    parent = "documentation"
+    url = "/documentation/codes"
+    name = "CSV log format"
+    weight = 3
+
+  [[languages.en.menu.footer]]
+    parent = "documentation"
+    url = "/documentation/codes#isems-bit-error-hex-codes"
+    name = "Hex status codes"
+    weight = 4
+
+[[languages.en.menu.footer]]
+  identifier = "hardware"
+  name = "Hardware"
+  weight = 3
+
+  [[languages.en.menu.footer]]
+    parent = "hardware"
+    url = "/hardware#1-suitable-wlan-routers"
+    name = "Router"
+    weight = 1
+
+  [[languages.en.menu.footer]]
+    parent = "hardware"
+    url = "/hardware#2-the-freifunk-openmppt"
+    name = "OpenMPPT"
+    weight = 2
+
+  [[languages.en.menu.footer]]
+    parent = "hardware"
+    url = "/hardware#3-lead-acid-batteries"
+    name = "Batteries"
+    weight = 3
+
+  [[languages.en.menu.footer]]
+    parent = "hardware"
+    url = "hardware#installation"
+    name = "Installation"
+    weight = 4
+
+
+
+[[menu.footer]]
+  identifier = "contact"
+  name = "Kontact"
+  weight = 1
+
+  [[menu.footer]]
+    parent = "contact"
+    name = "Team"
+    url = "/team"
+    weight = 1
+
+  [[menu.footer]]
+    parent = "contact"
+    url = "/faq"
+    name = "FAQ"
+    weight = 2
+
+  [[menu.footer]]
+    parent = "contact"
+    url = "/impressum"
+    name = "Impressum"
+    weight = 3
+
+  [[menu.footer]]
+    parent = "contact"
+    url = "/impressum#datenschutz"
+    name = "Datenschutz"
+    weight = 4
+
+[[menu.footer]]
+  identifier = "documentation"
+  name = "Dokumentation"
+  weight = 2
+
+  [[menu.footer]]
+    parent = "documentation"
+    url = "/documentation/system-messages/"
+    name = "Systemmeldungen"
+    weight = 1
+
+  [[menu.footer]]
+    parent = "documentation"
+    url = "/documentation/firmware/"
+    name = "Firmware"
+    weight = 2
+
+  [[menu.footer]]
+    parent = "documentation"
+    url = "/documentation/codes"
+    name = "CSV-Logformat"
+    weight = 3
+
+  [[menu.footer]]
+    parent = "documentation"
+    url = "/documentation/codes#isems-bit-error-hex-codes"
+    name = "Hex-Statuscodes"
+    weight = 4
+
+[[menu.footer]]
+  identifier = "hardware"
+  name = "Hardware"
+  weight = 3
+
+  [[menu.footer]]
+    parent = "hardware"
+    url = "hardware#1-geeignete-wlan-router"
+    name = "Router"
+    weight = 1
+
+  [[menu.footer]]
+    parent = "hardware"
+    url = "hardware#2-der-freifunk-openmppt"
+    name = "OpenMPPT"
+    weight = 2
+
+  [[menu.footer]]
+    parent = "hardware"
+    name = "Akkus"
+    url = "hardware#3-bleiakkus"
+    weight = 3
+
+  [[menu.footer]]
+    parent = "hardware"
+    url = "/hardware#installation"
+    name = "Installation"
+    weight = 4
+

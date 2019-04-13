@@ -1,7 +1,6 @@
 ---
 Title: OpenMPPT Firmware
 url: /documentation/firmware
-draft: false
 ---
 
 # Communication with the Freifunk OpenMPPT

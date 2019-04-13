@@ -1,7 +1,6 @@
 ---
 Title: Imprint and Privacy Policy
-url: /imprint/
-menu: "footer"
+draft: false
 ---
 # Imprint
 

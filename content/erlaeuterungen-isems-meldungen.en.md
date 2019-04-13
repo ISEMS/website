@@ -1,6 +1,6 @@
 ---
 Title: ISEMS System-Messages
-url: /documentation/system-messages
+url: /en/documentation/system-messages
 draft: false
 ---
 
