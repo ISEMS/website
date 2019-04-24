@@ -1,5 +1,6 @@
 ---
 Title: FAQ
+menu: header
 ---
 
 # Can I save money in the long term with a solar node?

@@ -1,5 +1,5 @@
 <header>
-  <a href="/"><h1>ISEMS</h1></a>
+  <a href='{{"/" | relLangURL}}'><h1>ISEMS</h1></a>
   <div class="menu">
     <nav>
       <ul>
@@ -18,7 +18,7 @@
         DE/EN
       </button>
       <ul class="language-menu">
-        {{ range $.Site.Home.AllTranslations }}
+        {{ range $.Page.AllTranslations }}
         <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
         {{ end }}
       </ul>

@@ -1,7 +1,6 @@
 ---
 title: Impressum & Datenschutz
 url: /impressum/
-menu: "footer"
 ---
 # Impressum
 
