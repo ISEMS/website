@@ -1,8 +1,8 @@
 ---
-title: Impressum & Datenschutz
-url: /impressum/
+Title: Imprint and Privacy Policy
+draft: false
 ---
-# Impressum
+# Imprint
 
 Knut Hühne <br/>
 Knut Hühne & Corinna Aichele GbR <br/>

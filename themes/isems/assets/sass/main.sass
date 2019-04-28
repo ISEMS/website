@@ -38,12 +38,40 @@ header
   a.active
     font-weight: bold
 
+  .menu
+    display: flex
+    align-items: center
+
   ul
     display: flex
     justify-content: space-around
     li
       list-style-type: none
       padding-left: 20px
+
+  .language-container
+    position: relative
+
+    button
+      outline: 0
+      border: none
+      background: transparent
+      color: $white
+      font-size: 16px
+      margin-left: 2em
+
+  .language-menu
+    position: absolute
+    display: none
+    right: 0
+    background: $blue
+
+    &.visible
+      display: block
+
+    li
+      padding: 10px
+
 
 .hero
   background-image: url('/images/hero.jpg')

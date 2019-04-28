@@ -1,7 +1,5 @@
 ---
 title: Hardware
-url: /hardware/
-draft: false
 menu: header
 ---
 # Hardware
