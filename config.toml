@@ -9,8 +9,12 @@ sectionPagesMenu = "main"
 [languages]
   [languages.de]
     LanguageName = "Deutsch"
+    [languages.de.params]
+      claim = "ISEMS ermöglicht es dir, einfach ein unabhängiges Solarnetzwerk zu betreiben"
   [languages.en]
     LanguageName = "English"
+    [languages.en.params]
+      claim = "With ISEMS you can easily operate an independent solar powered mesh network."
 
 
 [[languages.en.menu.footer]]
