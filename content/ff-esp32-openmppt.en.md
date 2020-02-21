@@ -4,7 +4,6 @@ title: FF-ESP32
 url: /FF-ESP32
 draft: false
 menu: header
-layout: single
 ---
 
 
