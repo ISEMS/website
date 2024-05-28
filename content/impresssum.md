@@ -4,9 +4,8 @@ url: /impressum/
 ---
 # Impressum
 
-Knut Hühne <br/>
-Knut Hühne & Corinna Aichele GbR <br/>
-Petersburger Str. 17 <br/>
-10249 Berlin <br/>
+Knut Hühne  
+Petersburger Str. 17  
+10249 Berlin  
 
-+49176 32961946
++49 (0)15679 238 695
