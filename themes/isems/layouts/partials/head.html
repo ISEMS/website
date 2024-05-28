@@ -1,5 +1,6 @@
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
 {{ $sass := resources.Get "sass/main.sass" }}
-{{ $style := $sass | resources.ToCSS }}
+{{ $style := $sass | toCSS $opts | minify | fingerprint }}
 
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
